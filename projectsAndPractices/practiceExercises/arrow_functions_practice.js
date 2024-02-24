@@ -4,7 +4,7 @@
 }
 greetings
 
-
+// arrow function conversion:
 const greetings_af = () => {
     return 'Good morning, World!'
 }
