@@ -14,3 +14,14 @@ console.log(sumOfThreeNumbers(30, 40, 50)); // 120
 // write a Sum function for any number of arguments.  (not passing an array). if an array(two functions)
 // happy path:
 // vary the  number of arguments: 3 args, 
+
+const sumOfMultipleNumbers = function () {
+    let sum = 0;
+    for (let i = 0; i < arguments.length; i++) {
+        sum += arguments[i];
+    }
+    return sum;
+};
+console.log(sumOfMultipleNumbers(1, 2, 3, 6, 8, 9, 7)); // 36
+console.log(sumOfMultipleNumbers(1, 2, 3)); // 6
+console.log(sumOfMultipleNumbers(1, 2)); // 3
