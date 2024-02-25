@@ -25,3 +25,15 @@ const sumOfMultipleNumbers = function () {
 console.log(sumOfMultipleNumbers(1, 2, 3, 6, 8, 9, 7)); // 36
 console.log(sumOfMultipleNumbers(1, 2, 3)); // 6
 console.log(sumOfMultipleNumbers(1, 2)); // 3
+
+
+const sumOfMultipleNumbers = () => {
+    let sum = 0;
+    for (let i = 0; i < arguments.length; i++) {
+        sum += arguments[i];
+    }
+    return sum;
+};
+console.log(sumOfMultipleNumbers(1, 2, 3, 6, 8, 9, 7)); // 36
+console.log(sumOfMultipleNumbers(1, 2, 3)); // 6
+console.log(sumOfMultipleNumbers(1, 2)); // 3
